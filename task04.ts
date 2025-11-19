@@ -17,3 +17,7 @@ if (num%3 === 0 && num%5 === 0) {
 } else {
     console.log("Not divisible by 3 or 5");
 }
+
+// using Modulo to find remainder, if remainder is 0 then it's divisible!
+// write a conditions each lines
+// put otherwise in else

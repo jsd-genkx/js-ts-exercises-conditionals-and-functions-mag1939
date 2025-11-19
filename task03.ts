@@ -12,3 +12,7 @@ if (password.length < 6) {
 } else if (password.length >= 11) {
     console.log("Strong")
 }
+
+// call function(?) length to count amount of chars our password has
+// and use with Comparison and Logic Operators to write a conditions
+// print out string message if match the condition
