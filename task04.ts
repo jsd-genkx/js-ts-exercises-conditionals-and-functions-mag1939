@@ -3,12 +3,11 @@
 // Divisible by only 3 → "Fizz"
 // Divisible by only 5 → "Buzz"
 // Otherwise → "Not divisible by 3 or 5"
+let num = 10;
 
-// TODO BONUS: Rewrite with if
-
-const num = 10;
-
-if (num%3 === 0 && num%5 === 0) {
+if (num === 0) {
+    console.log("Zero is not acceptable");
+} else if (num%3 === 0 && num%5 === 0) {
     console.log("FizzBuzz");
 } else if(num%3 === 0) {
     console.log("Fizz");
@@ -21,3 +20,5 @@ if (num%3 === 0 && num%5 === 0) {
 // using Modulo to find remainder, if remainder is 0 then it's divisible!
 // write a conditions each lines
 // put otherwise in else
+
+// TODO BONUS: Rewrite with if

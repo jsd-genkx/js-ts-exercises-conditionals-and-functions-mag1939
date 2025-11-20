@@ -33,8 +33,8 @@
 
 // TODO BONUS: Use object lookup
 
-// 1. กำหนด Type สำหรับ Lookup Object
-// Record<string, string> หมายถึง Object ที่มี Key เป็น string และ Value เป็น string
+// กำหนด Type สำหรับ Lookup Object
+// Record<key, value> กำหนด Object ที่ create ต้องเก็บค่า data Key ที่จะเข้ามาเป็น string และ Value เป็น string
 type FruitNameStacks = Record<string, string>;
 
 const fruitNameStacks: FruitNameStacks = {
@@ -44,15 +44,15 @@ const fruitNameStacks: FruitNameStacks = {
 }
 
 function getFruitMessage(fruitName: string): string {
-
-	// 2. Function พร้อม Type Annotation
 	// Input: fruitName เป็น string
 	// Output: string (จะเป็นข้อความผลไม้หรือ "Unknown fruit.")
 
 	// use Logical OR (||) เพื่อคืนค่า Default
+	// ตัวดำเนินการ || จะคืนค่า Truthly ตัวแรกที่พบ, ถ้า `fruitNameStacks[fruitName]` is undefined, null and falsy
 	return fruitNameStacks[fruitName] || "Unknown fruit.";
 }
 
 console.log(getFruitMessage("orange"));
+console.log(getFruitMessage("apple"));
 console.log(getFruitMessage(""));
 console.log(getFruitMessage("Avocado"));
